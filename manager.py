@@ -12,7 +12,8 @@ r = Fore.RED
 w = Fore.WHITE
 cy = Fore.CYAN
 ye = Fore.YELLOW
-colors = [lg, r, w, cy, ye]
+rs = Fore.CYAN
+colors = [lg, r, w, cy, ye, rs]
 
 try:
     import requests
