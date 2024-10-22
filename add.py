@@ -69,12 +69,12 @@ def clr():
         os.system('clear')
 
 accounts = []
-f = open('vars.txt', 'rb')
-while True:
-    try:
-        accounts.append(pickle.load(f))
-    except EOFError:
-        break
+with open('vars.txt', 'rb') as f:
+    while True:
+        try:
+            accounts.append(pickle.load(f))
+        except EOFError:
+            break
 
 # create sessions(if any) and check for any banned accounts
 # TODO: Remove code input(just to check if an account is banned)
